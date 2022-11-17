@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React BootCamp</title>
     <!-- Core React Code (shared file) -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
 
     <!-- Helper functions -->
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-</head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <div id="purejs"></div>
     <div id="root"></div>
-    <div>
-        <h2>This page uses React CDN</h2>
-    </div>
     <script>
-        const heading = React.createElement("h1", {}, "Hello World");
-
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-
-        console.log(heading);
-        root.render(heading);
-        console.log(root);
+      const container = document.getElementById("purejs");
+      const header = document.createElement("h1");
+      header.textContent = "This heading is created using Vanilla JS";
+      container.appendChild(header);
     </script>
-</body>
-
+    <script src="App.js"></script>
+  </body>
 </html>
