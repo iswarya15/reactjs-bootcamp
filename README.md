@@ -1,11 +1,14 @@
+## Session 01 - Hello World
+
+- Linked React & React-DOM CDN links to our app.
+
 ### Session 02 Changes
 
-- Initialize `npm` in repo with **default config** : `npm init -y`
-- Install `React` & `React-DOM` : `npm i react react-dom`
+- Initialized `npm` with **default config** : `npm init -y`
+- Installed `React` & `React-DOM` : `npm i react react-dom`
 - Install parcel as `devDependency`: `npm i -D parcel`
-- Starting app with `Parcel CLI` : `npx parcel src/index.html`
-
-- Create scripts for `start` & `build` commands :
+- Started app with `Parcel CLI` : `npx parcel src/index.html`
+- Created `start` & `build` script commands :
 
 ```json
     "source": "src/index.html",
