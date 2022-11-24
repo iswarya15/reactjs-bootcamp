@@ -19,8 +19,8 @@ The type attribute indicates the content type of the scripting language. A scrip
 <script src = "main.js" type = "application/ecmascript" ></script>
 ```
 
-{TitleComponent} vs {<TitleComponent>} & {<TitleComponent></TitleComponent>}
+{TitleComponent} vs `{<TitleComponent/>}` & `{<TitleComponent></TitleComponent>}`
 
 {TitleComponent} => Functions are not valid as a React child. This may happen if you return a Component instead of <Component /> from render. Or maybe you meant to call this function rather than return it.
 
-{<TitleComponent>} & {<TitleComponent></TitleComponent>} renders the component
+`{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` renders the component
