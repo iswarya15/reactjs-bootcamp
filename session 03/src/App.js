@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import ReactLogo from "./assets/react-logo.png";
 import UserIcon from "./assets/user.png";
 
@@ -13,7 +14,7 @@ const headerUsingCreateElement = React.createElement(
   ]
 );
 
-var course = "React BootCamp";
+const course = "React BootCamp";
 
 const headerUsingJSX = (
   <div className="title">
