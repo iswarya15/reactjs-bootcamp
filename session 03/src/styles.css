@@ -1,0 +1,23 @@
+.title {
+    color: hotpink;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+}
+
+.searchBar {
+    flex-basis: 90%;
+    margin: 0px 20px;
+}
+
+input {
+    width: 100%;
+}
+
+.searchBar input {
+    height: 30px;
+    margin-top: 13px;
+}
