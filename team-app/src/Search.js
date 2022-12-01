@@ -14,22 +14,17 @@ export default Search = ({ setFilteredCards, teammates }) => {
         return;
       }
 
-      const filteredMembers = filterMembers();
+      const filteredMembers = teammates.filter(
+        (member) =>
+          member.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+          member.company.toLowerCase().includes(searchInput.toLowerCase())
+      );
       filteredMembers.length > 0
         ? setFilteredCards(filteredMembers)
         : setErrorMessage("Member not found");
     } catch (e) {
       console.log(e);
     }
-  };
-
-  const filterMembers = () => {
-    return teammates.filter((member) => {
-      return (
-        member.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-        member.company.toLowerCase().includes(searchInput.toLowerCase())
-      );
-    });
   };
 
   return (

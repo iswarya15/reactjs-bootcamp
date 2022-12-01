@@ -5,7 +5,6 @@ import { teammates } from "./data";
 import Search from "./Search";
 
 const Body = () => {
-  console.log(teammates);
   const [filteredCards, setFilteredCards] = useState(teammates);
   return (
     <>
