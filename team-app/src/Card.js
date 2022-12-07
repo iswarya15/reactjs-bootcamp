@@ -27,7 +27,7 @@ const Card = ({ member }) => {
           <b>Location: </b>
           {member.location}
         </p>
-        <p className="id">
+        <p className="member-id-btn">
           <b>ID: </b>
           {member.id}
         </p>
