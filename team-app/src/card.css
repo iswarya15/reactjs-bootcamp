@@ -19,9 +19,10 @@
     text-align: center;
 }
 
-.id {
-    background-color: yellow;
+.member-id-btn {
+    background-color: rgb(255, 255, 93);
     padding: 10px;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
