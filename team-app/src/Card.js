@@ -6,7 +6,7 @@ const Card = ({ member }) => {
       <div>
         <img
           className="profile-img"
-          src={member.photo}
+          src={member.avatar_url}
           width="120"
           height="120"
         />

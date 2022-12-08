@@ -1,11 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Card from "./Card";
-import { teammates } from "./data";
 import Search from "./Search";
+import { getUserInfo } from "./api";
 
 const Body = () => {
+  const [teammates, setTeammates] = useState([]);
   const [filteredCards, setFilteredCards] = useState(teammates);
+
+  const getUsers = async () => {
+    const users = await getUserInfo();
+    setTeammates(users);
+  };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
   return (
     <>
       <Search setFilteredCards={setFilteredCards} teammates={teammates} />
