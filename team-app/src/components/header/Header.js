@@ -1,4 +1,5 @@
-import TeamLogo from "../assets/react.png";
+import TeamLogo from "../../assets/coding.png";
+import "./header.css";
 
 export default Header = () => (
   <div className="header">

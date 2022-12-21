@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./search.css";
 
 const Search = ({ listOfMembers, setFilteredMembers }) => {
   const [searchTerm, setSearchTerm] = useState("");

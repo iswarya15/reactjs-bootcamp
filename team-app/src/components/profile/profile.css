@@ -1,0 +1,13 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.profile-link {
+    text-decoration: none;
+    color: black;
+}

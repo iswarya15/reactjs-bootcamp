@@ -1,3 +1,4 @@
+import "./card.css";
 const Card = ({ member }) => {
   return (
     <div className="card">
